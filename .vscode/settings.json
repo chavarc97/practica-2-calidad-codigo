@@ -1,0 +1,39 @@
+{
+    "ruff.lint.select": [
+        "E",
+        "W",
+        "D",
+        "PL",
+        "B",
+        "BLE",
+        "F",
+        "I",
+        "UP",
+        "N",
+        "S",
+        "C90"
+    ],
+    "ruff.exclude": [
+        ".venv",
+        "build",
+        "dist",
+        "*.egg-info"
+    ],
+    "ruff.configuration": {
+        "format": {
+            "quote-style": "single"
+        },
+        "lint": {
+            "pydocstyle": {
+                "convention": "numpy"
+            }
+        }
+    },
+    "ruff.lineLength": 79,
+    "ruff.lint.preview": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.ruff": "explicit",
+        "source.organizeImports.ruff": "explicit"
+    }
+}

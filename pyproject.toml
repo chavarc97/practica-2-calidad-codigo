@@ -1,0 +1,15 @@
+[tool.ruff]
+line-length = 79
+exclude = [".venv", "dist", "build"]
+
+[tool.ruff.lint]
+# E (Error), W (Warning), D (Docstring), PL (Pylint), BLE (Blind except), F (Pyflakes), I (Isort)
+select = ["E", "W", "D", "PL", "BLE", "F", "I"]
+preview = true
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
