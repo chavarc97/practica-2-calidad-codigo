@@ -35,6 +35,6 @@ jobs:
           sonar-scanner \
             -Dsonar.projectKey=python-advanced-demo \
             -Dsonar.sources=. \
-            -Dsonar.host.url=http://your-sonarqube-server:9000 \
+            -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
             -Dsonar.python.pylint.reportPaths=ruff-report.txt \
             -Dsonar.login=$SONAR_TOKEN
